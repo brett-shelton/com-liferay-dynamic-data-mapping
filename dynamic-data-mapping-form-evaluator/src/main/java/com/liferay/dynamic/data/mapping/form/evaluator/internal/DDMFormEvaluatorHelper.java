@@ -314,7 +314,7 @@ public class DDMFormEvaluatorHelper {
 	protected String getValueString(
 		DDMFormFieldValue ddmFormFieldValue, String type) {
 
-		if (ddmFormFieldValue == null) {
+		if (ddmFormFieldValue == null || ddmFormFieldValue.getValue() == null) {
 			return null;
 		}
 
